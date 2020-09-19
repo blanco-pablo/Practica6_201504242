@@ -1,17 +1,19 @@
-# Practica 4  - 201504242
+# Practica 6  - 201504242
 
 ## Autor ✒️
 
 * **Pablo Javier Blanco Calderon** - *201504242* - [blanco-pablo](https://github.com/blanco-pablo)
-* __LINK__ dek video: https://drive.google.com/file/d/10zIaABMXfaKyMjsoRIMY8C6IerP8OHQ4/view?usp=sharing
+* __LINK__ dek video: 
 
 
 
 ## Restricciones 🚀
 
-* Tomar la [práctica #3](https://github.com/blanco-pablo/Practica3_SA/tree/master), crear una nueva rama y realizarla ahora utilizando un ESB como orquestador de servicios. >> https://github.com/blanco-pablo/Practica3_SA/tree/master
+* Tomar como base la práctica anterior (crear rama feature y al final merge a develop/master).
 
-* El ESB puede ser único, pero debe ser capaz de intermediar todas las comunicaciones.
+* Según el lenguaje seleccionado, integrar una herramienta para realizar las pruebas unitarias de la menos una clase.
+
+* Configurar Sonarqube para que ejecute las pruebas y que calcule la cobertura de pruebas unitarias.
 
 * 3 microservicios
 
@@ -29,7 +31,7 @@
 * Repartidor
     * Recibir pedido del restaurante
     * Informar estado del pedido al cliente
-     * Marcar como entregado
+    * Marcar como entregado
 # Herramientas :hammer:
 
 * __Visual Studio Code__
