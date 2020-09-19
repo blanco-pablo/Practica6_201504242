@@ -18,6 +18,10 @@ app.use(express.json());
 //carpeta publica para los usuarios
 app.use("/public",express.static(path.join(__dirname,'/public'))); 
 
+//Metodo GET para renderizar el formulario
+app.get('/prueba', function (req, res) {  
+    return res.send({p:"HOLA"});
+});
 
 //Metodo GET para renderizar el formulario
 app.get('/', function (req, res) {    
