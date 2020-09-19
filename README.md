@@ -3,8 +3,7 @@
 ## Autor ✒️
 
 * **Pablo Javier Blanco Calderon** - *201504242* - [blanco-pablo](https://github.com/blanco-pablo)
-* __LINK__ dek video: 
-
+* __LINK__ dek video: https://drive.google.com/file/d/1QIVzrydtaB0BdTrUoXXIxyRU8JTD7O--/view?usp=sharing
 
 
 ## Restricciones 🚀
@@ -68,9 +67,9 @@ npm -v
 ```
 # Uso 🛠️
 
-1. Clonar la rama Practica4_SA del repositorio: https://github.com/blanco-pablo/Practica3_SA
+1. Clonar la rama Practica4_SA del repositorio: https://github.com/blanco-pablo/Practica6_201504242
 ```bash
-git clone --branch Practica4_SA https://github.com/blanco-pablo/Practica3_SA
+git clone https://github.com/blanco-pablo/Practica6_201504242
 
 ```
 * Entre a la carpeta que quiere ejecutar:
@@ -97,50 +96,10 @@ npm install
     * "jade": "^1.11.0", documentacion [aqui](https://www.npmjs.com/package/express-jade)
     * "request": "^2.88.2", documentacion [aqui](https://expressjs.com/es/api.html)
 
-3. Ejecutar en cada carpeta
+3. Ejecutar el test en sonar seria:
 ```bash
-npm start
+npm run sonar
 ```
 4. En el navegador abrir:
-    * CLIENTE: http://localhost:3000/
-    * RESTAURANTE: http://localhost:8000/
-    * REPARTIDOR: http://localhost:8080/
-    * ESB: http://localhost:443
-
+    * Cliente SONAR: http://localhost:9000
 ---
-
-
-# ESB
-
-| URL | METODO | SEND | RESPONDSE |
-|-----|--------|------|-----------|
-| http://localhost:443/addPedido| POST | json | "OK" |
-| http://localhost:443/addRepartidor | POST | json | "OK" |
-
-* JSON SEND __/addpedido__
-```json
-{
-    "ID": int,
-    "restaurante": "string",
-    "Combo": int,
-    "Descripcion": "string",
-    "precio": int
-}
-```
-
-* JSON SEND __/addRepartidor__
-```json
-{
-    "conta": int,
-    "pedido":
-        {
-            "ID": int,
-            "restaurante": "string",
-            "Combo": int,
-            "Descripcion": "string",
-            "precio": int
-        },
-    "hora": DATE,
-    "estado": Pediente/Entregado
-}
-```
